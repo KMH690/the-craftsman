@@ -2,16 +2,24 @@
   <head>
     <title>The Craftsman</title>
     <link rel="stylesheet" type="text/css" href="interface.css">
-    <script src="main.js"></script>
   </head>
   <body>
     <h1>Craftsman</h1>
     <p>A game by kmh690</p>
     <ul>
       <ls><div><h3>Resources</h3></div></ls>
-      <ls><div><button type="button">Wood</button></div></ls>
-      <ls><div><button type="button">Stone</button></div></ls>
-      <ls><div><button type="button">Iron</button></div></ls>
+      <ls><div><button type="button" onclick="addWood(1)">Wood</button><p id="wood"></p></div></ls>
+      <ls><div><button type="button" onclick="addStone(1)">Stone</button></div></ls>
+      <ls><div><button type="button" onclick="addIron(1)">Iron</button></div></ls>
+      <script>
+        var wood = 0;
+        var stone = 0;
+        var iron = 0;
+        function addWood(num) {
+          wood+=num;
+          document.getElementById("wood").innerHTML = wood;
+        }
+      </script>
     </ul>
   </body>
 </html>
