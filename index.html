@@ -8,9 +8,9 @@
     <p>A game by kmh690</p>
     <ul>
       <ls><div><h3>Resources</h3></div></ls>
-      <ls><div class="wood"><button type="button" onclick="addWood(1)">Wood</button></div><div class="wood"><p id="Wood"> </p></div></ls>
-      <ls><div><button type="button" onclick="addStone(1)">Stone</button></div></ls>
-      <ls><div><button type="button" onclick="addIron(1)">Iron</button></div></ls>
+      <ls><div class="inline"><button type="button" onclick="addWood(1)">Wood</button></div><div class="inline"><p id="Wood"> </p></div></ls>
+      <ls><div class="inline"><button type="button" onclick="addStone(1)">Stone</button></div><div class="inline"><p id="Stone"> </p></div></ls>
+      <ls><div class="inline"><button type="button" onclick="addIron(1)">Iron</button></div><div class="inline"><p id="Iron"> </p></div></ls>
       <script>
         var wood = 0;
         var stone = 0;
@@ -18,6 +18,14 @@
         function addWood(num) {
           wood+=num;
           document.getElementById("Wood").innerHTML = wood;
+        }
+        function addStone(num) {
+          stone+=num;
+          document.getElementById("Stone").innerHTML = stone;
+        }
+        function addIron(num) {
+          iron+=num;
+          document.getElementById("Iron").innerHTML = iron;
         }
       </script>
     </ul>
